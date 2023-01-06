@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试组件加载</title>
+</head>
+<body>
+    <h1>Index</h1>
+    <div id="app"></div>
+    <script type="module">
+        import { createApp } from 'vue/dist/vue.esm-bundler.js';
+        import SSYUI, {
+            SButton,SFCButton,JSXButton
+        } from "../../dist/ssy-ui.esm.js"
+
+        createApp({
+            template: `
+                <SButton/>
+                <SFCButton/>
+                <JSXButton/>
+            `
+        })
+            .component(SButton.name, SButton)
+            .component(SFCButton.name, SFCButton)
+            .component(JSXButton.name, JSXButton)
+            .mount("#app")
+    </script>
+</body>
+</html>
