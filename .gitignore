@@ -1,2 +1,11 @@
 node_modules
-/dist
+coverage
+.pnpm-debug
+dist
+package-lock.json
+.DS_Store
+.spress
+.vercel
+.idea
+.vscode
+*.zip
