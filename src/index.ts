@@ -1,8 +1,8 @@
 import { createApp } from "vue/dist/vue.esm-browser";
-import SSYUI from './entry';
+import SSYUI from "./entry";
 
 createApp({
-    template: `
+  template: `
     <div style="margin-bottom:20px;">
         <SButton color="blue">主要按钮</SButton>
         <SButton color="green">绿色按钮</SButton>
@@ -36,7 +36,7 @@ createApp({
         <SButton color="yellow" round plain icon="message">提示按钮</SButton>
         <SButton color="red" round plain icon="delete">删除按钮</SButton>
     </div>
-    `
+    `,
 })
-.use(SSYUI)
-.mount("#app")
+  .use(SSYUI)
+  .mount("#app");
