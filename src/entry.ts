@@ -1,5 +1,5 @@
 import { App } from "vue";
-import { Button } from "./Button";
+const Button = require("./Button");
 
 // 导出单独组件
 export { Button };
@@ -7,6 +7,6 @@ export { Button };
 // 编写插件，实现install方法
 export default {
   install(app: App): void {
-    app.component(Button.name, Button);
+    app.component(Button.Button.name, Button);
   },
 };
