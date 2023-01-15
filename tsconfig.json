@@ -3,6 +3,8 @@
         "declaration": true, /*生成相关的.d.ts文件。*/
         "declarationDir": "../dist/types", /* .d.ts 文件输出目录*/
         "jsx": "preserve",
+        "moduleResolution": "node",
+        "target": "ES6",
         "types": [
             "vite/client", // if using vite
         ]
@@ -14,6 +16,6 @@
     "exclude": [
         "node_modules"
     ],
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
 }
