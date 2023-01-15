@@ -1,5 +1,5 @@
 /// <reference types="vitest" />
-import { defineConfig, Plugin, Plugin_2 } from "vite";
+import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import UnoCss from "./config/unocss";
@@ -16,9 +16,9 @@ const rollupOptions = {
 
 export const config = {
   plugins: [
-    vue() as Plugin_2,
-    vueJsx() as Plugin_2,
-    UnoCss() as Plugin_2[],
+    vue(),
+    vueJsx(),
+    UnoCss(),
     dts({
       outputDir: "./dist/types",
       insertTypesEntry: false, // 插入TS 入口

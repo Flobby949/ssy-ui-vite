@@ -6,6 +6,7 @@ import DemoBlock from 'vitepress-theme-demoblock/dist/client/components/DemoBloc
 import SSYUI from '../../../src/entry'
 import 'uno.css'
 
+
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
